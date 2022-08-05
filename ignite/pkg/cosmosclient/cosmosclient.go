@@ -355,7 +355,7 @@ func (c Client) BroadcastTxWithProvision(accountName string, msgs ...sdktypes.Ms
 	}
 	// the simulated gas can vary from the actual gas needed for a real transaction
 	// we add an additional amount to endure sufficient gas is provided
-	gas += 10000
+	gas += 100000
 	txf = txf.WithGas(gas)
 
 	// Return the provision function
